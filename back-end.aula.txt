@@ -1,0 +1,56 @@
+sintaxe
+<?php?>
+
+variáveis:
+int, float, string, bool, null
+
+valores aritméticos: +,-,*,/,% e **
+relação: ==, ===, !=
+
+&&, || e !
+if else e switch
+
+while, for e foreach
+
+modularizar um código: separar em arquivos menores, facilita manutenção e torna reutilizável
+
+inclusão de arquivos
+require: se não for encontrado, o php interrompe a execução com um erro fatal
+include: se falhar, ele emite um alerta e continua rodando o código 
+
+script client-side: roda no computador do cliente
+script server-side: roda diretamente no servidor
+
+<?php
+===CALCULADORA===
+$num1 = (float)readline("digite um numero: ");
+$num2 = (float)readline("digite outro número: ");
+
+ $n3 = $num1+$num2;
+ $n4 = $num1-$num2;
+ $n5 = $num1*$num2;
+ $n6 = $num2/$num1;
+ 
+ echo("\nsoma: $n3, \nsubtração: $n4, \nmultiplicação: $n5, \ndivisão: $n6")
+
+===ARRAYS===
+
+$frutas = ["banana","maçã","pera","uva","abacate"];
+ 
+   
+echo "primeira: ".$frutas[0];
+echo "\nultima: ".$frutas[4];
+
+
+===usuario===
+
+$usuario = [
+    'Nome'=>"carlos",
+    'Idade'=> 24,
+    'Email'=>"carlos1234"
+    ];
+
+echo "o usuario {$usuario['Nome']} tem {$usuario['Idade']} anos e seu contato é {$usuario['Email']}.";
+ 
+
+?>
